@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Roboto', sans-serif;
+}
+body{
+  background-color: #F5EFE6;
+  margin: 0;
+}
+
+/* Navbar */
+ul{
+  list-style-type: none;
+  margin: 10;
+  padding: 100;
+  overflow: hidden;
+  max-height: 30%;
+  max-width: 100%;
+  font-size: 20px;
+  position: absolute;
+}
+li{
+  float:left;
+}
+li a{
+  display: block;
+  color: #F5EFE6;
+  text-align: center;
+  padding: 30px 50px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #E8DFCA;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo { 
+    right: 0;
+    bottom: 100;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* overlay text on video */
+  .overlay {
+    position: absolute;
+    color: #F5EFE6;
+    top: 0;
+    bottom: -50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  /* Scoll down arrow */
+  .down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  /* History */
+.box1 {
+  background-color:#F5EFE6;
+  padding: 40px;
+  border: 0 solid #F5EFE6;
+  margin: auto;
+  height: 50%;
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+}
+h2 {
+  font-size: 70px;
+  text-align: center;
+}
+
+.box2{
+  background-color:#F5EFE6;
+  padding: 40px;
+  border: 0 solid #F5EFE6;
+  margin: auto;
+  height: 30%;
+  width: 90%;
+  font-size: 18px;
+}
+
+/* gallery */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-items{
+  width: 33.3333%;
+}
